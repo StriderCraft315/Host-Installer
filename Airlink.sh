@@ -24,14 +24,12 @@ restore_cursor() { tput cnorm 2>/dev/null || true; }
 trap restore_cursor EXIT INT TERM
 
 aash_logo() {
-    echo -e "${BBLUE} /$$      /$$ /$$           /$$                           /$$${RESET}"
-    echo -e "${BBLUE}| $$$    /$$$|__/          | $$                          | $$${RESET}"
-    echo -e "${BBLUE}| $$$$  /$$$$ /$$  /$$$$$$$| $$$$$$$   /$$$$$$   /$$$$$$ | $$${RESET}"
-    echo -e "${BBLUE}| $$ $$/$$ $$| $$ /$$_____/| $$__  $$ |____  $$ /$$__  $$| $$${RESET}"
-    echo -e "${BBLUE}| $$  $$$| $$| $$| $$      | $$  \ $$  /$$$$$$$| $$$$$$$$| $$${RESET}"
-    echo -e "${BBLUE}| $$\  $ | $$| $$| $$      | $$  | $$ /$$__  $$| $$_____/| $$${RESET}"
-    echo -e "${BBLUE}| $$ \/  | $$| $$|  $$$$$$$| $$  | $$|  $$$$$$$|  $$$$$$$| $$ $$${RESET}"
-    echo -e "${BBLUE}|__/     |__/|__/ \_______/|__/  |__/ \_______/ \_______/|__/{RESET}"
+    echo -e "${BBLUE}  __  __ _      _                _ ${RESET}"
+    echo -e "${BBLUE} |  \/  (_)    | |              | |${RESET}"
+    echo -e "${BBLUE} | \  / |_  ___| |__   __ _  ___| |${RESET}"
+    echo -e "${BBLUE} | |\/| | |/ __| '_ \ / _| |/ _ \ |${RESET}"
+    echo -e "${BBLUE} | |  | | | (__| | | | (_| |  __/ |${RESET}"
+    echo -e "${BBLUE} |_|  |_|_|\___|_| |_|\__,_|\___|_|${RESET}"
 }
 
 # Run a command quietly with spinner, log output, show only status
